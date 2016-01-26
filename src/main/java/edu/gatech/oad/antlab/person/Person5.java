@@ -31,8 +31,7 @@ public class Person5 {
 	 * @return the modified string
 	 */
 	private String calc(String input) {
-    	String shifted = new StringBuilder(input).delete(0, 2).append(input.substring(0, 2)).toString();
-		return shifted;
+		return new StringBuilder(input).delete(0, 2).append(input.substring(0, 2)).toString();
 	}
 	
 	/**
