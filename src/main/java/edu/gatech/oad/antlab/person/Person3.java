@@ -45,7 +45,7 @@ public class Person3 {
 	  if ((input == null) || (input.length() <= 1)) {
             return input;
         } else {
-            return reverse(input.substring(1)) + input.charAt(0);
+            return calc(input.substring(1)) + input.charAt(0);
         }
 	}
 }
