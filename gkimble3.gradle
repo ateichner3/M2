@@ -1,0 +1,31 @@
+apply plugin: 'java'
+
+defaultTasks 'jar'
+
+version = '2.1'
+
+jar {
+    manifest {
+        attributes("Implementation-Title": "Gradle",
+                    "Implementation-Version": version,
+                    'Main-Class': 'edu.gatech.oad.antlab.pkg1.AntLabMain',
+                    'Class-Path': '../../lib/resources.jar')
+    }
+}
+uploadArchives {
+    repositories {
+        flatDir {
+            dirs 'lib'
+        }
+    }
+}
+
+test {
+    systemProperties 'property': 'value'
+}
+
+dependencies {
+    compile files('lib/resources.jar')
+    testCompile group: 'junit', name: 'junit', version: '4.+'
+}
+
