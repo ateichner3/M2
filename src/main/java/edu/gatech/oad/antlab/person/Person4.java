@@ -53,11 +53,6 @@ public class Person4 {
     public String toString(String input) {
       return name + calc(input);
     }
-    public static void main(String[] args) {
-      String word = new String("abc123");
-      Person4 person4 = new Person4("Ji");
-      person4.calc(x);
-    }
 }
 
 
