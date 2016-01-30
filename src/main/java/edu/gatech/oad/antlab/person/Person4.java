@@ -38,8 +38,7 @@ public class Person4 {
         newLetter++;
         newWord += newLetter;
       }
-      System.out.println(newString);
-      return newString;
+      return newWord;
     }
     
     /**
